@@ -88,7 +88,6 @@ export default function Home() {
               Ian Ye
             </h1>
             <p className="mt-4 text-lg text-neutral-500 max-w-lg leading-relaxed">
-              Building tools that make GPUs go fast at{" "}
               <a
                 href="https://wafer.ai"
                 target="_blank"
@@ -97,7 +96,7 @@ export default function Home() {
               >
                 Wafer
               </a>
-              . Stanford CS. YC founder. Violinist.
+              {" · "}Stanford CS{" · "}YC founder
             </p>
             <div className="mt-6 flex items-center gap-3 justify-center sm:justify-start">
               {links.map((link) => (
