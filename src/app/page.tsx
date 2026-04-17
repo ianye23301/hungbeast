@@ -87,6 +87,9 @@ export default function Home() {
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-neutral-900">
               Ian Ye
             </h1>
+            <p className="mt-1 text-sm uppercase tracking-widest text-neutral-400">
+              The Hung Beast
+            </p>
             <p className="mt-4 text-lg text-neutral-500 max-w-lg leading-relaxed">
               <a
                 href="https://wafer.ai"
