@@ -9,7 +9,7 @@ const experiences = [
       "Building AI agents that optimize GPU kernels for inference. Shipped Kernel Arena, Trace Compare, and a cloud CUDA compiler.",
   },
   {
-    role: "Co-Founder",
+    role: "Co-Founder (prev)",
     company: "Willow",
     url: "https://www.ycombinator.com/companies/willow",
     description:
