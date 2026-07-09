@@ -6,7 +6,7 @@ const experiences = [
     company: "Wafer",
     url: "https://wafer.ai",
     description:
-      "Building AI agents that optimize GPU kernels for inference. Shipped Kernel Arena, Trace Compare, and a cloud CUDA compiler.",
+      "Performance engineering.",
   },
   {
     role: "Co-Founder (prev)",
