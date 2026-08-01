@@ -17,6 +17,30 @@ const experiences = [
   },
 ];
 
+const writing = [
+  {
+    title: "Is memory the moat?",
+    url: "https://www.wafer.ai/blog/kimi-k3-mi355x",
+    date: "July 2026",
+    description:
+      "Serving Kimi K3 on AMD MI355X at ~952 tok/s per node.",
+  },
+  {
+    title: "Performance per dollar is getting faster and cheaper",
+    url: "https://www.wafer.ai/blog/glm52-amd",
+    date: "July 2026",
+    description:
+      "Serving GLM5.2 on AMD MI355X at significantly lower cost than competing hardware.",
+  },
+  {
+    title: "Achieving Heterogeneous Compute One Kernel at a Time",
+    url: "https://www.wafer.ai/blog/kernels-are-still-the-moat",
+    date: "May 2026",
+    description:
+      "How custom kernels boosted Qwen3.5 throughput on AMD MI355X.",
+  },
+];
+
 const music = [
   "Co-concertmaster, National Youth Orchestra of Canada",
   "TSYO Concerto Competition Winner — Prokofiev Violin Concerto No. 1",
@@ -142,6 +166,33 @@ export default function Home() {
                 </div>
                 <p className="mt-2 text-neutral-500 leading-relaxed max-w-xl">
                   {exp.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Writing */}
+        <section className="animate-fade-in-delay-2 py-12 border-t border-neutral-200">
+          <h2 className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-8">
+            Writing
+          </h2>
+          <div className="space-y-8">
+            {writing.map((post) => (
+              <div key={post.url}>
+                <div className="flex items-baseline gap-3 flex-wrap">
+                  <a
+                    href={post.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-semibold text-neutral-900 hover:text-neutral-600 underline underline-offset-4 decoration-neutral-300 hover:decoration-neutral-500 transition-colors"
+                  >
+                    {post.title}
+                  </a>
+                  <span className="text-sm text-neutral-400">{post.date}</span>
+                </div>
+                <p className="mt-2 text-neutral-500 leading-relaxed max-w-xl">
+                  {post.description}
                 </p>
               </div>
             ))}
